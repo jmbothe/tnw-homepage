@@ -1,0 +1,314 @@
+@media only screen and (min-width: 768px) {
+
+  /*
+  --------------------
+  HEADER RULES
+  --------------------
+  */
+
+  #categories {
+  display: flex;
+  }
+
+  #social li {
+    display: flex;
+  }
+
+  #social li:last-of-type {
+    display: none;
+  }
+
+  /*
+  --------------------
+  SECTION "HEADLINES" RULES
+  --------------------
+  */
+
+  #headlines > div:first-of-type {
+    width: 65%;
+  }
+
+  #headlines > div:last-of-type {
+    width: 35%;
+  }
+
+  .minor {
+    height: 50%;
+  }
+
+  #hl-one {
+    margin-right: 8px;
+  }
+
+  #hl-two {
+    margin-bottom: 8px;
+  }
+
+  .minor h1 {
+    font-size: 24px;
+  }
+
+  .minor h2 {
+    font-size: 13px;
+  }
+
+  .minor h3 {
+    font-size: 11px;
+  }
+
+  #hl-one h1 {
+    font-size: 48px;
+  }
+
+  #hl-one h2 {
+    font-size: 16px;
+  }
+
+  #hl-one h3 {
+    font-size: 13px;
+  }
+
+  /*
+  --------------------
+  SECTION "LATEST" RULES
+  --------------------
+  */
+
+  .latest-art {
+    width: 33.333%;
+  }
+
+  .latest-art > div {
+    padding-top: 60%;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+
+  /*
+  --------------------
+  SECTION "CONFERENCE" RULES
+  --------------------
+  */
+
+  .conference-art {
+    width: 50%;
+  }
+
+  .conference-art > div {
+    padding-top: 60%;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+
+  /*
+  --------------------
+  SECTION "FUNDING" RULES
+  --------------------
+  */
+
+  .funding-art {
+    width: 50%;
+  }
+
+  #fund-head {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  /*
+  --------------------
+  SECTION "COLUMNS" RULES
+  --------------------
+  */
+
+  .columns-art {
+    width: 50%;
+  }
+
+  .columns-art > div:first-of-type {
+    padding-top: 60%;
+  }
+
+
+  /*
+  --------------------
+  SECTION "DEALS" RULES
+  --------------------
+  */
+
+  .deals-art {
+    width: 33.333%;
+  }
+
+  .deals-art > div {
+    padding-top: 80%;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+
+  /*
+  --------------------
+  FOOTER RULES
+  --------------------
+  */
+
+  nav {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1024px) {
+
+  /*
+  --------------------
+  SECTION "HEADLINES" RULES
+  --------------------
+  */
+
+
+  .minor h1 {
+    font-size: 28px;
+  }
+
+  .minor h2 {
+    font-size: 13px;
+  }
+
+  .minor h3 {
+    font-size: 11px;
+  }
+
+  #hl-one h1 {
+    font-size: 56px;
+  }
+
+  #hl-one h2 {
+    font-size: 16px;
+  }
+
+  #hl-one h3 {
+    font-size: 13px;
+  }
+
+
+  /*
+  --------------------
+  SECTION "LATEST" RULES
+  --------------------
+  */
+
+
+  .latest-art {
+    width: 25%;
+  }
+
+
+  #latest h1 {
+    padding-left: 10px;
+    font-size: 28px;
+  }
+
+  #latest h2 {
+    font-size: 16px;
+  }
+
+  #latest h3 {
+    font-size: 13px;
+  }
+
+
+  /*
+  --------------------
+  SECTION "CONFERENCE" RULES
+  --------------------
+  */
+
+  .conference-art {
+    width: 25%;
+  }
+
+
+  #conference h1 {
+    padding-left: 10px;
+    font-size: 28px;
+  }
+
+  #conference h2 {
+    font-size: 16px;
+  }
+
+  #conference h3 {
+    font-size: 13px;
+  }
+
+
+  /*
+  --------------------
+  SECTION "FUNDING" RULES
+  --------------------
+  */
+
+  .funding-art {
+    width: 25%;
+  }
+
+  #funding h1 {
+    font-size: 28px;
+  }
+
+  #funding ul li {
+    font-size: 16px;
+  }
+
+
+  /*
+  --------------------
+  SECTION "COLUMNS" RULES
+  --------------------
+  */
+
+  .columns-art {
+    width: 33.333%;
+  }
+
+
+  /*
+  --------------------
+  SECTION "DEALS" RULES
+  --------------------
+  */
+
+  .deals-art {
+    width: 25%;
+  }
+
+
+  #deals h1 {
+    padding-left: 10px;
+    font-size: 28px;
+  }
+
+  #deals h2 {
+    font-size: 16px;
+  }
+
+  #deals h3 {
+    font-size: 13px;
+  }
+
+}

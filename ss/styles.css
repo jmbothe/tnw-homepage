@@ -1,0 +1,855 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,menu,nav,section {
+    display:block;
+}
+
+ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*
+--------------------
+GLOBAL RULES
+--------------------
+*/
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'ARS Maquette','Helvetica Neue',Arial,sans-serif;
+}
+
+body {
+  height: 2000px;
+  max-width: 1298px;
+  margin-top: 48px;
+}
+
+section {
+  padding: 20px;
+}
+
+/*
+--------------------
+HEADER RULES
+--------------------
+*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  background-color: white;
+  box-shadow: 0 1px 30px #ddd;
+}
+
+header ul {
+  display: flex;
+  height: 100%;
+}
+header ul li {
+  height: 100%;
+}
+
+img[src$="tnw.svg"] {
+  height: 100%;
+  padding: 16px 20px;
+  background: linear-gradient(to right bottom, #c09,#f42 85%);
+  transition: background 2s ease;
+}
+
+img[src$="tnw.svg"]:hover {
+  background-position: 106px 96px;
+}
+
+#categories {
+  display: none;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+#categories:hover {
+  color: #222;
+}
+
+#social li {
+  display: none;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#social li:nth-last-of-type(2) {
+  display: flex;
+  padding: 0 15px;
+  border-left: 1px solid #ddd;
+}
+
+#social li:nth-last-of-type(2) a {
+  color: #999;
+}
+
+#social li:nth-last-of-type(2) a:hover {
+  color: #666;
+}
+
+#social li:last-of-type {
+  display: flex;
+  border-left: 1px solid #ddd;
+}
+
+#social li div {
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  text-align: center;
+  font-family: Avalon, sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+#social li div:hover {
+  background-color: #666;
+}
+
+
+/*
+--------------------
+SECTION "HEADLINES" RULES
+--------------------
+*/
+
+
+
+#headlines {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+
+#headlines h1 {
+  font-family: Avalon, sans-serif;
+  color: #fff;
+}
+
+#headlines h2 {
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff
+}
+
+#headlines h3 {
+  padding: 10px 0 5px;
+  color: rgba(255,255,255,.6);
+  font-weight: 100;
+}
+
+#headlines > div {
+  display: flex;
+}
+
+
+#headlines > div:last-of-type {
+flex-direction: column;
+}
+
+#headlines article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 18% 20px 10px;
+}
+
+.minor h1 {
+  font-size: 20px;
+}
+
+.minor h2 {
+  font-size: 13px;
+}
+
+.minor h3 {
+  font-size: 11px;
+}
+
+#hl-one, #hl-two, #hl-three {
+  margin-bottom: 10px;
+}
+
+#hl-one {
+  background: linear-gradient(rgba(100,100,100,.1), rgba(0,0,0,.9) 95%), url("../images/headlines/01.gif")no-repeat;
+  background-size: cover;
+}
+
+#hl-one h1 {
+  font-size: 28px;
+}
+
+#hl-one h2{
+  font-size: 14px;
+}
+
+#hl-one h3 {
+  font-size: 13px;
+}
+
+#hl-two {
+  background: linear-gradient(rgba(100,100,100,.1), rgba(0,0,0,.9) 95%), url("../images/headlines/02.jpg")no-repeat;
+  background-size: cover;
+}
+
+#hl-three {
+  background: linear-gradient(rgba(100,100,100,.1), rgba(0,0,0,.9) 95%), url("../images/headlines/03.jpeg")no-repeat;
+  background-size: cover;
+}
+
+article[id^=hl] {
+  transition: opacity .5s;
+}
+
+article[id^=hl]:hover {
+  opacity: .92;
+}
+
+
+/*
+--------------------
+SECTION "LATEST" RULES
+--------------------
+*/
+
+#latest h1, #latest h3 {
+  padding: 10px 0;
+}
+
+#latest h1 {
+  padding-left: 10px;
+  color: #F42;
+  font-size: 24px;
+}
+
+#latest h2 {
+  color: #000;
+  font-size: 14px;
+}
+
+#latest h3 {
+  color: #888;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+#latest-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.latest-art {
+  padding: 12px;
+}
+
+.latest-art > div {
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin-right: 10px;
+}
+
+#late-one {
+  background: url("../images/latest/01.jpg") no-repeat;
+  background-size: cover;
+}
+
+#late-two {
+  background: url("../images/latest/02.jpg") no-repeat;
+  background-size: cover;
+}
+
+#late-three {
+  background: url("../images/latest/03.jpg") no-repeat;
+  background-size: cover;
+}
+
+#late-four {
+  background: url("../images/latest/04.png") no-repeat;
+  background-size: cover;
+}
+
+#late-five {
+  background: url("../images/latest/05.png") no-repeat;
+  background-size: cover;
+}
+
+#late-six {
+  background: url("../images/latest/06.jpg") no-repeat;
+  background-size: cover;
+}
+
+#late-seven {
+  background: url("../images/latest/07.jpg") no-repeat;
+  background-size: cover;
+}
+
+#late-eight {
+  background: url("../images/latest/08.jpg") no-repeat;
+  background-size: cover;
+}
+
+/*
+--------------------
+SECTION "CONFERENCE" RULES
+--------------------
+*/
+
+#conference h1, #conference h3 {
+  padding: 10px 0;
+}
+
+
+#conference h1 {
+  padding-left: 10px;
+  color: #F42;
+  font-size: 24px;
+}
+
+#conference h2 {
+  color: #000;
+  font-size: 14px;
+}
+
+#conference h3 {
+  color: #888;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+#conference-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conference-art {
+  padding: 12px;
+  width: 100%;
+}
+
+.conference-art > div {
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin-right: 10px;
+}
+
+#conf-one {
+  background: url("../images/conference/01.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#conf-two {
+  background: url("../images/conference/02.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#conf-three {
+  background: url("../images/conference/03.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#conf-four {
+  background: url("../images/conference/04.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*
+--------------------
+SECTION "FUNDING" RULES
+--------------------
+*/
+
+
+#funding h1 {
+  padding: 0 0 10px 10px;;
+  color: #F42;
+  font-size: 20px;
+}
+
+#funding h2 {
+  padding: 16px 12px 16px 84px;
+  color: #fff;
+  font-size: 16px;
+}
+
+#funding h3 {
+  padding: 16px 12px 16px 84px;
+  color: #000;
+  font-size: 16px;
+}
+
+#funding h4:first-of-type {
+  padding: 14px 12px 0 12px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+#funding h4:last-of-type {
+  padding: 14px 12px 14px 12px;
+  border-bottom: 1px solid #ffc2ab;
+  color: #333;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+#funding p {
+  padding: 14px 12px 14px 12px;
+  color: #222;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#fund-head {
+  display: flex;
+  flex-direction: column;
+}
+
+#funding-ul {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+#funding ul li {
+  padding-left: 6px;
+  color: #F42;
+  font-size: 14px;
+  font-family: 'ARS Maquette','Helvetica Neue',Arial,sans-serif;
+}
+
+#funding-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.funding-art {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding: 12px;
+}
+
+.funding-art > div:first-of-type {
+  background: #F42;
+}
+
+.funding-art > div:nth-of-type(2) {
+  background: #ffe4da;
+}
+
+.funding-art > div:last-of-type {
+background: #fffaf8;
+flex-grow: 1;
+}
+
+img[src^="images/funding"] {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 60px;
+  height: 60px;
+}
+
+/*
+--------------------
+SECTION "COLUMNS" RULES
+--------------------
+*/
+
+#columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#columns h1 {
+  padding-bottom: 10px;
+  color: #F42;
+  font-size: 28px;
+}
+
+#columns h2, #columns h3 {
+  color: #fff;
+}
+
+#columns h4, #columns h5 {
+  color: #F42;
+}
+
+#columns h3 {
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.columns-art {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.columns-art > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 50% 10px 10px 10px;
+}
+
+.columns-art > div:last-of-type {
+  padding: 10px 0 16px;
+  background: #fffaf8;
+}
+
+#columns img[src^="images/funding"] {
+  position: static;
+  float: right;
+  width: 60px;
+  height: 60px;
+}
+
+#columns ul {
+  list-style: initial;
+  padding-left: 16px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #444;
+}
+
+#columns li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+article[class^=column] {
+  transition: opacity .5s;
+}
+
+article[class^=column]:hover {
+  opacity: .92;
+}
+
+#col-one {
+  background: linear-gradient(rgba(100,100,100,.1), rgba(0,0,0,.9) 95%), url("../images/conference/01.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#col-two {
+  background: linear-gradient(rgba(100,100,100,.1), rgba(0,0,0,.9) 95%), url("../images/conference/02.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#col-three {
+  background: linear-gradient(rgba(100,100,100,.1), rgba(0,0,0,.9) 95%), url("../images/latest/05.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#col-four {
+  background: linear-gradient(rgba(100,100,100,.1), rgba(0,0,0,.9) 95%), url("../images/headlines/02.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#col-five {
+  background: linear-gradient(rgba(100,100,100,.1), rgba(0,0,0,.9) 95%), url("../images/headlines/03.jpeg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#col-six {
+  background: linear-gradient(rgba(100,100,100,.1), rgba(0,0,0,.9) 95%), url("../images/latest/01.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#col-seven {
+  background: linear-gradient(rgba(100,100,100,.1), rgba(0,0,0,.9) 95%), url("../images/latest/02.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#col-eight {
+  background: linear-gradient(rgba(100,100,100,.1), rgba(0,0,0,.9) 95%), url("../images/latest/03.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#col-nine {
+  background: linear-gradient(rgba(100,100,100,.1), rgba(0,0,0,.9) 95%), url("../images/latest/04.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*
+--------------------
+SECTION "DEALS" RULES
+--------------------
+*/
+
+#deals h1 {
+  padding: 0 0 10px 10px;
+  color: #f42;
+  font-size: 24px;
+}
+
+#deals h2 {
+  padding-right: 10px;
+  color: #f42;
+  font-size: 18px;
+  float: right;
+}
+
+#deals h3 {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+#deals p {
+  font-size: 12px;
+  color: #888;
+}
+
+#deals-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.deals-art {
+  width: 100%;
+  padding: 12px;
+}
+
+.deals-art > div {
+  margin-right: 10px;
+  float: left;
+  height: 60px;
+  width: 60px;
+}
+
+#deal-one {background: url("../images/deals/01.jpg") no-repeat;
+background-size: cover;
+}
+
+#deal-two {background: url("../images/deals/02.jpg") no-repeat;
+background-size: cover;
+}
+
+#deal-three {background: url("../images/deals/03.jpg") no-repeat;
+background-size: cover;
+}
+
+#deal-four {background: url("../images/deals/04.jpg") no-repeat;
+background-size: cover;
+}
+
+#deal-five {background: url("../images/deals/05.jpg") no-repeat;
+background-size: cover;
+}
+
+#deal-six {background: url("../images/deals/06.jpg") no-repeat;
+background-size: cover;
+}
+
+#deal-seven {background: url("../images/deals/07.jpg") no-repeat;
+background-size: cover;
+}
+
+#deal-eight {background: url("../images/deals/08.jpg") no-repeat;
+background-size: cover;
+}
+
+/*
+--------------------
+FOOTER RULES
+--------------------
+*/
+
+footer {
+  background-color: #111;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  padding-bottom: 30px;
+}
+
+nav ul li {
+  padding: 5px;
+}
+
+nav ul li:first-of-type {
+  padding: 10px 0;
+  color: #999;
+  text-transform: uppercase;
+}
+
+#social-two {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+#social-two li {
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+}
+
+#social-two li div {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+  background-color: #444;
+}
+
+#last-list {
+  display: flex;
+  justify-content: center;
+}
+
+#last-list li {
+  padding: 0 4px;
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+#end {
+  background-color: #000;
+}
+
+#end p {
+  text-align: center;
+  font-size: 12px;
+}
